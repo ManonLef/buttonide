@@ -1,7 +1,7 @@
-function BtnCreator({ onClick, text, style }) {
+function BtnCreator({ ...props }) {
   return (
-    <button onClick={onClick} className={style}>
-      {text}
+    <button onClick={props.onClick} className={props.style}>
+      {props.text}
     </button>
   );
 }

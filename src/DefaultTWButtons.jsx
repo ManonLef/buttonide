@@ -12,11 +12,7 @@ function DefaultTWButtons() {
   };
   
   return (
-    <BtnCreator
-      onClick={firstProp.onClick}
-      text={firstProp.text}
-      style={firstProp.style}
-    />
+    <BtnCreator {...firstProp}/>
   );
 }
 
